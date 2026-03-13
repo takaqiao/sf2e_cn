@@ -439,7 +439,7 @@
                     "senzar": "神知语",
                     "shadowtongue": "阴影语",
                     "shae": "影民语",
-                    "shirren": "Shirren",
+                    "shirren": "希伦虫人",
                     "shisk": "希斯克语",
                     "shoanti": "休盎提语",
                     "shobhad": "绍贝德语",
@@ -2028,7 +2028,7 @@
                         "Label": "韧性符文"
                     }
                 },
-                "Resilient": "Resilient",
+                "Resilient": "韧性",
                 "Specific": {
                     "Hint": "将此护甲标记为<i>特殊魔法护甲</i>，表明其性能超出了其构成材料以及镶嵌符文所允许的范围。在标记之时，其名称、等级、稀有度和价格将不再被贵重材料或符文所改写。然而，这些材料和符文仍将作为后续升级、稀有度和价格调整的基准。",
                     "Label": "特殊魔法护甲"
@@ -2707,14 +2707,14 @@
                 "Broken": "损坏",
                 "BrokenThreshold": {
                     "Label": "破损阈值",
-                    "ShortLabel": "BT"
+                    "ShortLabel": "破损阈值"
                 },
                 "Bulk": {
                     "HeldOrStowed": "负载（持握/储存）",
                     "Label": "重量",
                     "Light": {
                         "Label": "轻量",
-                        "ShortLabel": "L"
+                        "ShortLabel": "传奇"
                     },
                     "Negligible": {
                         "Label": "微不足道的",
@@ -3010,16 +3010,16 @@
                 "CriticalSpecialization": {
                     "axe": "选择一个在你的触及内与初始目标相邻的生物。如果它的AC低于你重击的攻击掷骰，那么你对该生物造成等同一颗武器伤害骰（也包括来自<em>强击符文</em>的额外骰，若有）的伤害。其它加值或额外骰不适用于这个伤害。",
                     "bomb": "提升炸弹的溅射伤害（若有）半径到10尺。",
-                    "bow": "If the target of the critical hit is adjacent to a surface, it gets stuck to that surface by the missile. The target is @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized} and must spend an Interact action to attempt a @Check[athletics|dc:10|name:Pull the Missile Free|showDC:all] check to pull the missile free; it can't move from its space until it succeeds. The creature doesn't become stuck if it is incorporeal, is liquid, or could otherwise escape without effort (such as by being large enough that the missile would not be an impediment.)",
-                    "brawling": "The target must succeed at a @Check[fortitude|against:class|name:Brawling Critical Specialization] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your next turn.",
+                    "bow": "若重击的目标邻接一个表面，则它会被弹头钉在表面上。目标陷入@UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{Immobilized}，它必须使用互动动作尝试进行@Check[athletics|dc:10|name:Pull the Missile Free|showDC:all]检定来拔出弹头，之后才能移动离开其方格。虚体、液态或能以某种方式毫不费力地避开此效果的生物不会被钉住（例如体积足够大到弹头不会成为阻碍。）",
+                    "brawling": "目标必须成功通过@Check[fortitude|against:class|name:Brawling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续到你的下回合结束。",
                     "club": "你将目标沿你选择的方向直线推开最多10尺，这是被迫移动。",
                     "corrosive": "The target takes @Damage[(1d6 + @item.system.runes.potency)[persistent,acid]]. You gain an item bonus to this acid damage equal to the weapon's item bonus to attack rolls.",
                     "cryo": "This weapon freezes part of the target, making it hard for them to move their body. The target is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of your next turn.",
-                    "firearm": "The target must succeed at a @Check[fortitude|against:class|name:Firearm Critical Specialization] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.",
-                    "flail": "The target is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} unless they succeed at a @Check[reflex|against:class|name:Flail Critical Specialization] save against your class DC.",
+                    "firearm": "目标必须通过一个@Check[fortitude|against:class|name:Firearm Critical Specialization]豁免对抗你的职业DC，否则会受到@UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
+                    "flail": "除非目标成功通过@Check[reflex|against:class|name:Flail Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}。",
                     "flame": "The target takes @Damage[(1d6 + @item.system.runes.potency)[persistent,fire]]. You gain an item bonus to this fire damage equal to the weapon's item bonus to attack rolls.",
                     "grenade": "Apply the effect listed in the grenade's entry to each creature that rolls a critical failure against the effects of the grenade.",
-                    "hammer": "The target is knocked @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone} unless they succeed at a @Check[fortitude|against:class|name:Hammer Critical Specialization] save against your class DC.",
+                    "hammer": "除非目标成功通过@Check[fortitude|against:class|name:Hammer Critical Specialization]对抗你的职业DC，否则被击倒，陷入@UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}。",
                     "laser": "The target must succeed at a @Check[fortitude|against:class] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled} until the start of your next turn.",
                     "mental": "The target must succeed at a @Check[will|against:class] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} until the start of your next turn.",
                     "plasma": "The target takes @Damage[(1d6 + @item.system.runes.potency)[persistent,electricity]]. You gain an item bonus to this electricity damage equal to the weapon's item bonus to attack rolls.",
@@ -3028,11 +3028,11 @@
                     "projectile": "The target must succeed at a @Check[fortitude|against:class] or be @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the start of your next turn.",
                     "shield": "目标被你击退5尺。这是被迫移动。",
                     "shock": "The target must succeed at a @Check[fortitude|against:class] or be @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1} until the start of your next turn.",
-                    "sling": "The target must succeed at a @Check[fortitude|against:class|name:Sling Critical Specialization] save against your class DC or be @UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{Stunned 1}.",
+                    "sling": "目标必须成功通过@Check[fortitude|against:class|name:Sling Critical Specialization]豁免对抗你的职业DC，否则陷入@UUID[Compendium.sf2e.conditions.Item.dfCMdR4wnpbYNTix]{震慑 Stunned 1}。",
                     "sniper": "The target takes 2 additional damage per weapon damage dice.",
                     "sonic": "The target must succeed at a @Check[fortitude|against:class] or be @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute.",
-                    "spear": "Weapons of this type pierce the target, weakening its attacks. The target is @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} until the start of your next turn.",
-                    "sword": "The target is made off-balance by your attack, becoming @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of your next turn."
+                    "spear": "该类型的武器刺穿目标，会使其攻击变得软弱无力。目标陷入@UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}，直到你的下一回合开始。",
+                    "sword": "目标因为你的攻击而失去平衡，变得@UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}直到你的下一回合开始。"
                 },
                 "Damage": {
                     "DiceNumber": "骰数"
@@ -3279,58 +3279,58 @@
             "Abilities": {
                 "Glossary": {
                     "AllAroundVision": "<p>这个怪物可以同时看见所有方向，因此无法被夹击。</p>",
-                    "AquaticAmbush": "<p><strong>Requirements</strong> The monster is hiding in water and a creature that hasn't detected it is within the listed number of feet.</p>\n<hr />\n<p><strong>Effect</strong> The monster moves up to its swim Speed + 10 feet toward the triggering creature, traveling on water and on land. Once the creature is in reach, the monster makes a Strike against it. The creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against this Strike.</p>",
+                    "AquaticAmbush": "<p><strong>需求</strong> 怪物藏匿在水中，并且一个位于标注距离范围内的生物未能察觉到此怪物。</p>\n<hr />\n<p><strong>效果</strong> 怪物以最大游泳速度+10尺的速度在水中和陆地上向目标移动。一旦目标进入怪物的触及范围，则怪物对其进行一次打击。目标生物在对抗这次打击时视为@UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}。</p>",
                     "AttackOfOpportunity": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
                     "AtWillSpells": "<p>怪物可以施放任意多次随意法术而无需花费法术位。</p>",
                     "Aura": "<p>怪物的灵光会自动影响怪物周边指定发散范围内的一切事物。怪物无需在灵光上花费任何动作；灵光将在特定的时间起效，例如生物在灵光内结束其回合或是生物进入灵光。</p>\n<p>如果一个灵光仅造成伤害，它的条目中只会列出半径、伤害和豁免检定。这类灵光在生物进入灵光或是在灵光内开始其回合时对生物造成伤害。一个生物在同一回合内仅会被此灵光伤害一次。</p>\n<p>GM也许会判定怪物的光环不会影响其盟友。例如，一个生物在与某怪物长时间同处之后可能会免疫此怪物的气势凶猛。</p>",
-                    "Buck": "<hr />\n<p>Most monsters that serve as mounts can attempt to buck off unwanted or annoying riders, but most mounts will not use this reaction against a trusted creature unless the mounts are spooked or mistreated.</p>\n<p><strong>Trigger</strong> A creature @UUID[Compendium.sf2e.actions.Item.PM5jvValFkbFH3TV]{Mounts} or uses the @UUID[Compendium.sf2e.actions.Item.q9nbyIF0PEBqMtYe]{Command an Animal} action while riding the monster.</p>\n<hr />\n<p><strong>Effect</strong> The triggering creature must succeed at a Reflex saving throw against the listed DC or fall off the creature and land @UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}. If the save is a critical failure, the triggering creature also takes @Damage[1d6[bludgeoning]] damage in addition to the normal damage for the fall.</p>",
-                    "CatchRock": "<p><strong>Requirements</strong> The monster must have a free hand but can @UUID[Compendium.sf2e.actions.Item.wQYmDStjdjn0I26t]{Release} anything it's holding as part of this reaction.</p>\n<p><strong>Trigger</strong> The monster is targeted with a thrown rock Strike or a rock would fall on the monster.</p>\n<hr />\n<p><strong>Effect</strong> The monster gains a +4 circumstance bonus to its AC against the triggering attack or to any defense against the falling rock. If the attack misses or the monster successfully defends against the falling rock, the monster catches the rock, takes no damage, and is now holding the rock.</p>",
-                    "ChangeFormation": "<p>The troop reconfigures to assume one of the formations below they know. Using this action again ends any previous formation, and the troop can also use this action to revert to its default formation, ending any benefits and drawbacks.</p><ul><li><strong>Loose</strong> Members of the troop fan out to cover more ground. <strong>Benefit</strong> Any weaknesses the troop has to area and splash damage are suppressed. <strong>Drawback</strong> Enemies' saving throws against the troop's damaging effects are one degree of success better than they roll.</li><li><strong>Marching Column</strong> This formation traverses long distances more rapidly. <strong>Benefit</strong> The troop gains a +10 foot circumstance bonus to all its Speeds. <strong>Drawback</strong> The troop is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} and takes a –2 penalty to Reflex saves.</li><li><strong>Turtle Shell</strong> The troop interlocks their shields. Only a group with shields can use this formation. <strong>Benefit</strong> The troop gains a +2 circumstance bonus to AC against ranged attacks and to Reflex saves. <strong>Drawback</strong> The troop takes a –10-foot penalty to all its Speeds.</li><li><strong>Wedge</strong> The troop aligns itself behind a powerful commander. <strong>Benefit</strong> The troop chooses an adjacent allied creature without the troop trait to fall in behind. Each time the chosen creature Strides, the troop follows as a free action, Striding to keep the chosen creature adjacent. <strong>Drawback</strong> The troop loses some of their autonomy. They're slowed 1 and can't voluntarily move away from their leader.</li></ul>",
-                    "ChangeShape": "<p>The monster changes its shape indefinitely. It can use this action again to return to its natural shape or adopt a new shape. Unless otherwise noted, a monster cannot use Change Shape to appear as a specific individual. Using Change Shape counts as creating a disguise for the @UUID[Compendium.sf2e.actions.Item.AJstokjdG6iDjVjE]{Impersonate} use of Deception. The monster's transformation automatically defeats Perception DCs to determine whether the creature is a member of the ancestry or creature type into which it transformed, and it gains a +4 status bonus to its Deception DC to prevent others from seeing through its disguise. Change Shape abilities specify what shapes the monster can adopt. The monster doesn't gain any special abilities of the new shape, only its physical form. For example, in each shape, it replaces its normal Speeds and Strikes, and might potentially change its senses or size. Any changes are listed in its stat block.</p>",
+                    "Buck": "<hr />\n<p>大多数充当坐骑的怪物都会尝试甩脱那些讨厌恼人的骑手，不过除非是收到了惊吓或是虐待，否则大多数坐骑不会对被信任的生物使用这种反应动作。</p>\n<p><strong>触发</strong> 一个生物在骑在怪物上时使用@UUID[Compendium.sf2e.actions.Item.PM5jvValFkbFH3TV]{骑乘 Mounts}或是@UUID[Compendium.sf2e.actions.Item.q9nbyIF0PEBqMtYe]{指挥怪物 Command an Animal}动作。</p>\n<hr />\n<p><strong>效果</strong>触发的生物必须成功通过一次所列DC的反射豁免检定，否则被摔落且@UUID[Compendium.sf2e.conditions.Item.j91X7x0XSomq8d60]{Prone}。如果豁免结果是大失败，触发的生物还会在正常的坠落伤害外额外承受@Damage[1d6[bludgeoning]]伤害。</p>",
+                    "CatchRock": "<p><strong>要求</strong> 怪物必须有一只空闲手，但是能够@UUID[Compendium.sf2e.actions.Item.wQYmDStjdjn0I26t]{松开}手上握持的物品作为此反应动作的一部分。</p>\n<p><strong>触发</strong> 怪物成为一次投石打击的目标，或是石块将要掉落到怪物上。</p>\n<hr />\n<p><strong>效果</strong> 怪物在对抗此次攻击的AC或是任何对抗落石的防御上获得+4环境加值。如果攻击未命中或是怪物成功避免了落石，怪物接住了石头，避免了伤害。现在，是这只怪物握住了石头。</p>",
+                    "ChangeFormation": "<p>部队重新编队以采用他们所知的以下其中一种阵型。再次使用此动作将结束之前的阵型效果，部队还可以使用此动作恢复到默认阵型，避免任何优势和劣势的影响。</p>\n<ul><li><strong>松散阵型</strong> 部队成员分散开来覆盖更多地面。\n<strong>优势</strong> 部队对区域和溅射伤害的弱点被压制。\n<strong>劣势</strong> 敌对单位对部队伤害效果的豁免掷骰成功度比他们掷出的骰子高一阶。</li><li><strong>行军纵队</strong> 此阵型可以更快地穿越长距离。\n<strong>优势</strong> 部队获得对所有速度的+10尺环境加值。\n<strong>劣势</strong> 部队处于@UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}状态，反射豁免获得-2减值。</li><li><strong>龟壳阵型</strong> 部队将盾牌相互锁定。只有拥有盾牌的群体才能使用此阵型。\n<strong>优势</strong> 部队在对远程攻击的AC和对反射豁免上获得+2的环境加值。\n<strong>劣势</strong> 部队所有速度减10尺。</li><li><strong>楔形阵型</strong> 部队将自己排列在一位强大的指挥官身后。\n<strong>优势</strong> 部队可以选择一个相邻的没有部队特性的盟友生物跟在后面。每次所选生物行进时，部队作为一个免费动作跟随，行进以保持所选生物相邻。\n<strong>劣势</strong> 部队失去一些自主性。他们受到缓慢1，且不能自愿离开他们的领导者。</li></ul>",
+                    "ChangeShape": "<p>怪物无限期地改变了其形态。它能够使用此动作恢复原形或是改为一个新的形态。除非另有说明，否则怪物无法使用变身能力呈现出某个特定个体。使用变身也被视为使用欺骗技能的@UUID[Compendium.sf2e.actions.Item.AJstokjdG6iDjVjE]{乔装 Impersonate}来伪装自身。在判别所变化形态的生物族裔或是生物类型时，怪物的变形将自动成功对抗察觉DC，并且在防止从其他方面识破其伪装的欺骗DC上获得+4状态加值。变身能力指定了怪物能够变化的形态。怪物仅能变化其生理形态，并不会获得新形态的特殊能力。例如，在每个形态下，它都会替换其正常速度与打击，并且可能改变其感官或体型。所有变更都会在数据栏中列出。</p>",
                     "ConstantSpells": "<p>一个恒定法术将持续对怪物生效而无需怪物施放之，并且法术的持续时间为永久。如果一个恒定法术被反制，则怪物可以花费此法术正常情况下所要求的施法动作来将其重新激活。</p>",
-                    "Constrict": "<p>The monster deals the listed amount of damage to any number of creatures @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} by it. Each of those creatures can attempt a basic Fortitude save with the listed DC.</p>",
-                    "Coven": "<p>This monster can form a coven with two or more other creatures who also have the coven ability. This involves performing an 8-hour ceremony with all prospective coven members. After the coven is formed, each of its members gains elite adjustments, adjusting their levels accordingly. Coven members can sense other members' locations and conditions by spending a single action, which has the concentrate trait, and can sense what another coven member is sensing as a two-action activity, which has the concentrate trait as well.</p>\n<p>Covens also grant spells and rituals to their members, but these can be cast only in cooperation between three coven members who are all within 30 feet of one another. A coven member can contribute to a coven spell with a single action that has the concentrate trait. If two coven members have contributed these actions within the last round, a third member can cast a coven spell on her turn by spending the normal spellcasting actions. A coven can cast its coven spells an unlimited number of times but can cast only one coven spell each round. All covens grant the 8th-rank @UUID[Compendium.sf2e.spells.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis} spell and all the following spells, which the coven can cast at any rank up to 5th: @UUID[Compendium.sf2e.spells.Item.41TZEjhO6D1nWw2X]{Augury}, @UUID[Compendium.sf2e.spells.Item.vLA0q0WOK2YPuJs6]{Charm}, @UUID[Compendium.sf2e.spells.Item.HXhWYJviWalN5tQ2]{Clairaudience}, @UUID[Compendium.sf2e.spells.Item.zvKWclOZ7A53DObE]{Clairvoyance}, @UUID[Compendium.sf2e.spells.Item.yM3KTTSAIHhyuP14]{Dream Message}, @UUID[Compendium.sf2e.spells.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}, @UUID[Compendium.sf2e.spells.Item.Ucf8eynbZMfUucjE]{Illusory Scene}, @UUID[Compendium.sf2e.spells.Item.Ek5XI0aEdZhBgm21]{Scouting Eye}, and @UUID[Compendium.sf2e.spells.Item.FM3SmEW8N1FCRjqt]{Talking Corpse}. Individual creatures with the coven ability also grant additional spells to any coven they join. A coven can also cast the @UUID[Compendium.sf2e.spells.Item.XkDCzMIyc0YOjw05]{Control Weather} ritual, with a DC of 23 instead of the standard DC.</p>\n<p>If a coven member's departure or death brings the coven below three members, the remaining members keep their elite adjustments for 24 hours, but without enough members to contribute the necessary actions, they can't cast coven spells.</p>",
-                    "Darkvision": "<p>A monster with darkvision can see perfectly well in areas of darkness and dim light, though such vision is in black and white only. Some forms of magical darkness, such as a 4th-rank @UUID[Compendium.sf2e.spells.Item.4GE2ZdODgIQtg51c]{Darkness} spell, block normal darkvision. A monster with @UUID[Compendium.sf2e.bestiary-ability-glossary.Item.4Ho2xMPEC05aSxzr]{Greater Darkvision}, however, can see through even these forms of magical darkness.</p>",
+                    "Constrict": "<p>怪物对任意数量的被其@UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}或@UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。</p>",
+                    "Coven": "<p>此怪物能够与两个或是更多同样拥有巫团能力的生物组成巫团。这要求所有的准巫团成员举行一个8小时的仪式。当结成巫团之后，所有成员都将获得精英进化，并且随之调整其等级。巫团成员能够以一个带有专注特征的单动作感知其他成员的位置和状态，或是以一个同样带有专注特征的双动作感受到另一名巫团成员的感官。</p>\n<p>巫团还会赋予其成员法术和仪式，但是只有三名巫团成员彼此位于30尺之内时才能合作施展这些法术或仪式。一名巫团成员可以通过一个有专注特征的单动作为巫团法术作出贡献。如果两名巫团成员在上一轮内以此方法作出了贡献，那么第三名成员可以在她自己的回合花费正常的施法动作施放巫团法术。一个巫团能够无限次地施放巫团法术，但是每轮只能施放一次巫团法术。所有巫团都会赋予8环@UUID[Compendium.sf2e.spells.Item.dN8QBNuTiaBHCKUe]{Cursed Metamorphosis}，巫团还将获得以下法术并且可以将其升环至5环：@UUID[Compendium.sf2e.spells.Item.41TZEjhO6D1nWw2X]{Augury}，@UUID[Compendium.sf2e.spells.Item.vLA0q0WOK2YPuJs6]{Charm}，@UUID[Compendium.sf2e.spells.Item.HXhWYJviWalN5tQ2]{Clairaudience}，@UUID[Compendium.sf2e.spells.Item.zvKWclOZ7A53DObE]{Clairvoyance}，@UUID[Compendium.sf2e.spells.Item.yM3KTTSAIHhyuP14]{Dream Message}，@UUID[Compendium.sf2e.spells.Item.i35dpZFI7jZcRoBo]{Illusory Disguise}，@UUID[Compendium.sf2e.spells.Item.Ucf8eynbZMfUucjE]{Illusory Scene}，@UUID[Compendium.sf2e.spells.Item.Ek5XI0aEdZhBgm21]{Scouting Eye}以及@UUID[Compendium.sf2e.spells.Item.FM3SmEW8N1FCRjqt]{Talking Corpse}。个别拥有巫团能力的生物还会为她们所加入的巫团带来额外的法术。一个巫团还能够施展@UUID[Compendium.sf2e.spells.Item.XkDCzMIyc0YOjw05]{Control Weather}，使用DC23代替标准DC。</p>\n<p>如果一名巫团成员的脱离或是死亡使得巫团的成员数量少于三名，则其余成员保留其精英进化24小时，但是因为没有足够的成员贡献必要的动作，她们无法施放巫团法术。</p>",
+                    "Darkvision": "<p>拥有黑暗视觉的怪物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。某些形式的黑暗魔法，例如4环@UUID[Compendium.sf2e.spells.Item.4GE2ZdODgIQtg51c]{Darkness}，会阻碍普通的黑暗视觉。然而，拥有@UUID[Compendium.sf2e.bestiary-ability-glossary.Item.4Ho2xMPEC05aSxzr]{高等黑暗视觉 Greater Darkvision}的怪物甚至可以看穿这类形式的魔法黑暗。 </p>",
                     "Disease": "<p>当一名生物暴露在怪物的疾病下时，它需要尝试一次强韧豁免用以避免感染该疾病。疾病的等级为造成疾病的怪物的等级。疾病遵从于苦难规则。</p>",
-                    "Engulf": "<p>The monster Strides up to double its Speed and can move through the spaces of any creatures in its path. Any creature of the monster's size or smaller whose space the monster moves through can attempt a Reflex save with the listed DC to avoid being engulfed. A creature unable to act automatically critically fails this save. If a creature succeeds at its save, it can choose to be either pushed aside (out of the monster's path) or pushed in front of the monster to the end of the monster's movement. The monster can attempt to Engulf the same creature only once in a single use of Engulf. The monster can contain as many creatures as can fit in its space.</p>\n<p>A creature that fails its save is pulled into the monster's body. It is @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, is @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and has to hold its breath or start suffocating. The creature takes the listed amount of damage when first engulfed and at the end of each of its turns while it's engulfed. An engulfed creature can get free by @UUID[Compendium.sf2e.actions.Item.SkZAQRkLLkmBQNB9]{Escaping} against the listed escape DC. An engulfed creature can attack the monster engulfing it, but only with unarmed attacks or with weapons of light Bulk or less. The engulfing creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the engulfed creature cuts itself free.\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.1cbIe569UD6paXad]{Effect: Engulf and Swallow Whole}</p>\n<p>A creature that gets free by either method can immediately breathe and exits the swallowing monster's space.</p>\n<p>If the monster dies, all creatures it has engulfed are automatically released as the monster's form loses cohesion.</p>",
+                    "Engulf": "<p>怪物以两倍速度行走，并且可以移动穿越路径上任何生物所占据的空间。所以体型等同于怪物或更小的生物在其所在空间被怪物穿越时可尝试进行一次反射豁免对抗所列DC以避免被包卷。无法行动的生物在豁免中自动大失败。如果生物在豁免中成功，它能选择被推到一旁（怪物的路径以外）或是被怪物推在前面直到怪物移动结束。怪物在单次的包卷行动中只能尝试包卷同一个生物一次。怪物能够容纳尽可能多的生物直至填满其占据空间。</p>\n<p>豁免失败的生物被拖入怪物体内。它@UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}，获得@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，并且必须屏住呼吸，否则便会开始窒息。生物在被首次包卷时以及被包卷的每一个回合结束时受到所列出的伤害。被包卷的生物可以尝试一次对抗所列逃脱DC的@UUID[Compendium.sf2e.actions.Item.SkZAQRkLLkmBQNB9]{Escaping}动作来重获自由。被包卷的生物可以攻击包卷它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。包卷中的生物在对抗此攻击时@UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}。如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂值，那个被包卷的生物重获自由。</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.1cbIe569UD6paXad]{Effect: Engulf and Swallow Whole}</p>\n<p>通过这些法脱困的生物可以立即开始呼吸，并且离开吞噬他们的怪物的占据空间。 </p>\n<p>如果怪物死亡，它便无法维持其形态，所有被其包卷的生物将被自动释放。</p>",
                     "FastHealing": "<p>拥有此能力的怪物在其回合开始时将恢复一定数量的生命值。</p>",
-                    "Ferocity": "<p><strong>Trigger</strong> The monster is reduced to 0 HP.</p>\n<hr />\n<p><strong>Effect</strong> The monster avoids being knocked out and remains at 1 HP, but its @UUID[Compendium.sf2e.conditions.Item.Yl48xTdMh3aeQYL2]{Wounded} value increases by 1. When it is Wounded 3, it can no longer use this ability</p>",
+                    "Ferocity": "<p><strong>触发</strong> 怪物的生命值降低至0点。</p>\n<hr />\n<p><strong>效果</strong> 怪物免于被打倒，并且余留1点HP，其@UUID[Compendium.sf2e.conditions.Item.Yl48xTdMh3aeQYL2]{受伤 Wounded}值增加1。当其受伤3的时候，它无法再使用此能力。</p>",
                     "FormUp": "<p>部队选择它当前占据的一格空间，重新分配其所占据的方格，新的方格可以是任何形状，但是所有方格必须连续，并且位于被选择的方格的15尺之内。部队不能和其他生物共享空间。</p>",
-                    "FrightfulPresence": "<p>A creature that first enters the area must attempt a Will save.</p>\n<p>Regardless of the result of the saving throw, the creature is temporarily immune to this monster's Frightful Presence for 1 minute.</p>\n<hr />\n<p><strong>Critical Success</strong> The creature is unaffected by the presence.</p>\n<p><strong>Success</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p>\n<p><strong>Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p>\n<p><strong>Critical Failure</strong> The creature is @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 4}.</p>",
-                    "GolemAntimagic": "<p>A golem is immune to spells and magical abilities other than its own, but each type of golem is affected by a few types of magic in special ways. These exceptions are listed in shortened form in the golem's stat block, with the full rules appearing here. If an entry lists multiple types (such as \"cold and water\"), either type of spell can affect the golem.</p><ul><li><strong>Harmed By</strong> Any magic of this type that targets the golem causes it to take the listed amount of damage (this damage has no type) instead of the usual effect. If the golem starts its turn in an area of magic of this type or is affected by a persistent effect of the appropriate type, it takes the damage listed in the parenthetical.</li><li><strong>Healed By</strong> Any magic of this type that targets the golem makes the golem lose the slowed condition and gain HP equal to half the damage the spell would have dealt. If the golem starts its turn in an area of this type of magic, it gains the HP listed in the parenthetical.</li><li><strong>Slowed By</strong> Any magic of this type that targets the golem causes it to be @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} for [[/gmr 2d6 #rounds]]{2d6 rounds} instead of the usual effect. If the golem starts its turn in an area of this type of magic, it's slowed 1 for that round.</li><li><strong>Vulnerable To</strong> Each golem is vulnerable to one or more specific spells, with the effects described in its stat block.</li></ul>",
-                    "Grab": "<p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Grab in its damage entry, or the monster has a creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Grab and choose one creature it's grabbing or restraining with an appendage that has Grab to automatically extend that condition to the end of the monster's next turn.</p>",
-                    "GreaterConstrict": "<p>The monster deals the listed amount of damage to any number of creatures @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained} by it. Each of those creatures can attempt a basic Fortitude save with the listed DC. A creature that fails this save falls @UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{Unconscious}, and a creature that succeeds is then temporarily immune to falling unconscious from Greater Constrict for 1 minute.</p>",
+                    "FrightfulPresence": "<p>首次进入灵光的生物必须进行一次意志豁免。</p>\n<p>无论结果如何，该生物都将在1分钟内免疫此怪物的气势凶猛。</p>\n<hr />\n<p><strong>大成功</strong>该生物不受气势凶猛的影响。</p>\n<p><strong>成功</strong>该生物受到@UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}.</p>\n<p><strong>失败</strong> 该生物受到 @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}.</p>\n<p><strong>大失败</strong>该生物受到 @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 4}.</p>",
+                    "GolemAntimagic": "<p>魔像免疫法术和魔法能力，魔像自身所拥有的除外。但是每种魔像都会被少数几个特定法术以特殊方式影响。这些效果在魔像的具体数据里会以缩写的方式给出，这里则是详细解释。如果列出的条目包含多种类型（例如“寒冷和水”）则这些类型的法术都能对魔像产生影响。</p><ul><li><strong>被伤害</strong> 任意该种类的魔法以该魔像为目标时，都能对该魔像造成所列伤害（该伤害无伤害类型），并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，或受到该种魔法的持续性效果影响，则受到括号内所标明的伤害值。</li><li><strong>被治疗</strong> 任意该种类的魔法以该魔像为目标时，都能解除该魔像的缓慢效果并治疗魔像相当于法术伤害一半的HP。如果魔像开始回合时位于该种类型的范围魔法效果中，则获得括号内所列的生命值。</li><li><strong>被减速</strong> 任意该种类的魔法以该魔像为目标时，都能让魔像陷入@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，持续[[/gmr 2d6 #rounds]]{2d6轮}，并取代原本的法术效果。如果魔像开始回合时位于该种类型的范围魔法效果中，则魔像在该轮中陷入缓慢1。</li><li><strong>法术弱点</strong> 每种魔像都会有针对某一种或几种特定的法术的弱点，具体效果会描述在数据中。</li></ul>",
+                    "Grab": "<p><strong>需求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“攫抓”，或怪物已经让一个生物陷入@UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}或@UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}状态</p><hr /><p><strong>效果</strong> 如果在一次打击后使用，怪物尝试用发动攻击的部位[[/act grapple]]该生物。该尝试不适用也不累计怪物的多重攻击减值。</p><p>相对的，怪物可以使用攫抓动作，选择一个正被它擒抱或束缚的生物，拥有攫抓特征的肢体将自动将擒抱或束缚状态延长至怪物的下回合结束。</p>",
+                    "GreaterConstrict": "<p>怪物对任意数量的被其@UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}或@UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}的生物造成所列出的伤害。这些生物都可进行一次基础强韧豁免对抗所列出的DC。在豁免中失败的生物将陷入@UUID[Compendium.sf2e.conditions.Item.fBnFDH2MTzgFijKf]{失去意识 Unconscious}，豁免成功的生物在1分钟内免疫高等紧勒的昏迷效果。</p>",
                     "GreaterDarkvision": "<p>拥有高等黑暗视觉的生物可以在黑暗和昏暗光照下正常视物，可惜这种视觉只能看见黑白两色。拥有高等黑暗视觉的生物甚至可以看穿魔法黑暗。</p>",
                     "Hover": "When a monster's land speed indicates that the creature hovers, its land Speed represents how fast it can move while hovering within 5 feet of a solid surface. Hovering creatures don't count as flying but might be able to avoid certain types of difficult or hazardous terrain, at the GM's discretion.",
-                    "ImprovedGrab": "<p><strong>Trigger</strong> The monster's last action was a successful Strike that lists Improved Grab in its damage entry, or the monster has a creature @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed} or @UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>Effect</strong> If used after a Strike, the monster attempts to [[/act grapple]] the creature using the body part it attacked with as a free action. This attempt neither applies nor counts toward the creature's multiple attack penalty.</p><p>The monster can instead use Improved Grab as an action and choose one creature it's grabbing or restraining with an appendage that has Improved Grab to automatically extend that condition to the end of the monster's next turn.</p>",
-                    "ImprovedKnockdown": "<p><strong>Trigger</strong> The monster's last action was a successful Strike that lists Improved Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature as a free action. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p>",
-                    "ImprovedPush": "<p><strong>Trigger</strong> The monster's last action was a successful Strike that lists Improved Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act shove]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Improved Push lists a distance, change the distance the creature is pushed on a success to that distance.</p>",
-                    "Knockdown": "<p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Knockdown in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act trip]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty.</p>",
+                    "ImprovedGrab": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通擒获，或者怪物已经使一个生物@UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}或@UUID[Compendium.sf2e.conditions.Item.VcDeM8A5oI6VqhbM]{Restrained}</p><hr /><p><strong>效果</strong> 若在打击后使用，怪物以自由动作用攻击的身体部位对该生物尝试一次[[/act grapple]]。该尝试不适用也不累计生物的多重攻击减值。</p><p>怪物也可以选择一个正用肢体使之受擒或束缚的生物，再次使用一个动作进行精通擒获，将其状态延长至怪物的下个回合结束。</p>",
+                    "ImprovedKnockdown": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击，且伤害栏列有精通击倒</p><hr /><p><strong>效果</strong> 怪物以自由动作对该生物尝试一次[[/act trip]]。该尝试不适用也不累计生物的多重攻击减值。</p>",
+                    "ImprovedPush": "<p><strong>触发</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“精通推离”</p><hr /><p><strong>效果</strong> 怪物尝试[[/act shove]]生物。该尝试既不应用也不累积怪物的多重攻击减值。如果精通推离列出了距离，则怪物成功推离时的距离改为所列出的距离。</p>",
+                    "Knockdown": "<p><strong>需求</strong>怪物的最后的动作是一次命中的打击，在其伤害条目中列列有“击倒”。</p><hr /><p><strong>效果</strong> 怪物尝试[[/act trip]]生物。该尝试不适用也不累计怪物的多重攻击减值。</p>",
                     "Lifesense": "<p>生命感知使得怪物能够感知所列范围内所有活物与不死生物的生命力。就如同视觉可以分辨不同的颜色那般，这种感觉可以区分驱使活物的命能和驱使不死生物的虚能。</p>",
-                    "LightBlindness": "<p>When first exposed to bright light, the monster is @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} until the end of its next turn. After this exposure, light doesn't blind the monster again until after it spends 1 hour in darkness. However, as long as the monster is in an area of bright light, it's @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzled}.</p>",
-                    "LowLightVision": "<p>The monster can see in dim light as though it were bright light, so it ignores the @UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed} condition due to dim light.</p>",
+                    "LightBlindness": "<p>当初次暴露在明亮光照下时，该怪物将会@UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{失明 Blinded} 直至其下一回合。在初次暴露后，亮光不再使怪物失明，除非其又在黑暗中呆了1小时。然而，只要怪物还处于明亮光照下，它就会保持@UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{目眩 Dazzled}。</p>",
+                    "LowLightVision": "<p>怪物可以在昏暗的光线下视物，就好像在明亮光线下一样，因此它会忽略因昏暗光线产生的@UUID[Compendium.sf2e.conditions.Item.DmAIPqOBomZ7H95W]{Concealed}状态。</p>",
                     "NegativeHealing": "<p>具有虚能治疗效果的生物从虚能而不是命能中获取生命。它被命能伤害所伤，而不是命能治疗所治愈。它不会受到虚能伤害，并且会被治疗不死的虚能效果治愈。</p>",
                     "NoBreath": "The monster doesn't breathe and is immune to effects that require breathing.",
                     "Poison": "<p>当一名生物暴露在怪物的毒素下时，它需要尝试一次强韧豁免用以避免中毒。毒素的等级为造成疾病的怪物的等级。毒素遵从于苦难规则。</p>",
                     "PowerAttack": "<p><strong>频率</strong>一回合一次</p>\n<hr />\n<p><strong>效果</strong> 怪物进行一次近战攻击。当计算怪物的多次攻击惩罚时，这会算作两次攻击。如果这次攻击命中，怪物造成的武器伤害会额外增加一个武器的伤害骰。</p>",
-                    "Pull": "<p><strong>Requirements</strong> The monster's last action was a success with a Strike that lists Pull in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to @UUID[Compendium.sf2e.actions.Item.lOE4yjUnETTdaf2T]{Reposition} the creature, moving it closer to the monster. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Pull lists a distance, change the distance the creature is pulled on a success to that distance.</p>",
-                    "Push": "<p><strong>Requirements</strong> The monster's last action was a successful Strike that lists Push in its damage entry</p><hr /><p><strong>Effect</strong> The monster attempts to [[/act shove]] the creature. This attempt neither applies nor counts toward the monster's multiple attack penalty. If Push lists a distance, change the distance the creature is pushed on a success to that distance.</p>",
+                    "Pull": "<p><strong>需求</strong> 怪物的最后一个动作是成功的打击并且在伤害条目中列出了拉拽（Pull）</p><hr /><p><strong>效果</strong> 怪物尝试对生物进行@UUID[Compendium.sf2e.actions.Item.lOE4yjUnETTdaf2T]{移位 Reposition}，将其拉向怪物。这次尝试既不适用于也不计入怪物的多重攻击惩罚。如果拉拽列出了距离，在成功时变为生物被拉拽至该距离。</p>",
+                    "Push": "<p><strong>要求</strong> 怪物的上一个动作是一次成功的打击并且在伤害条目中列出了“推离”。</p><hr /><p><strong>效果</strong>怪物尝试[[/act shove]]生物。该尝试不适用也不会累计多重攻击减值。若推离列明了距离，生物被击退该距离。</p>",
                     "ReactiveStrike": "<p><strong>触发</strong> 位于怪物触及范围内的一个生物使用操作动作、移动动作、远程攻击，或是在一次移动动作中离开了该方格。</p>\n<hr />\n<p><strong>效果</strong> 怪物尝试对触发的生物发动一次近战打击。如果这次攻击是一次重击，并且是由操作动作触发，则怪物打断了该动作。这次打击不会计算多重攻击减值，并且多重攻击减值也不适用于这次打击。</p>",
-                    "Regeneration": "<p>This monster regains the listed number of Hit Points each round at the beginning of its turn. Its @UUID[Compendium.sf2e.conditions.Item.yZRUzMqrMmfLu0V1]{Dying} condition never increases beyond Dying 3 as long as its regeneration is active. However, if it takes damage of a type listed in the regeneration entry, its regeneration deactivates until the end of its next turn. Deactivate the regeneration before applying any damage of a listed type, since that damage might kill the monster by bringing it to Dying 4.</p>",
+                    "Regeneration": "<p>怪物在每回合开始时恢复所列出的生命值。再生起效期间怪物的@UUID[Compendium.sf2e.conditions.Item.yZRUzMqrMmfLu0V1]{濒死 Dying}状态永远不会超过3。然而，一旦其受到了再生条目中所罗列的伤害类型，再生将在其下一轮结束前失效。再生在受到所罗列的伤害前就已失效，因此这些伤害可能会导致濒死4从而杀死怪物。</p>",
                     "Rend": "<p>撕裂条目中会列出一项怪物所拥有的打击。</p>\n<p><strong>要求</strong>怪物在同一轮中连续两次使用在条目中列的打击类型命中同一名生物。</p>\n<hr />\n<p><strong>效果</strong> 怪物自动对此敌人造成打击伤害。</p>",
                     "RetributiveStrike": "<p><strong>触发</strong> 一个敌人对怪物的盟友造成了伤害，且两者都距离怪物15尺以内。</p>\n<hr />\n<p><strong>效果</strong> 盟友对被触发的伤害获得2+怪物等级的全伤害抗力。如果敌人在触及范围内，怪物对其发动一次近战打击。</p>",
                     "Scent": "<p>灵敏嗅觉通过气味感应生物或物品，并且这是一种朦胧感官。其作用范围已在能力中列出，并且仅能在侦测散发出气味的生物或物品时起效（例如，无生命的生物通常都不会发出气味）。</p>\n<p>如果一个生物散发出浓郁的气味或是出于上风处，GM可将灵敏嗅觉用于侦测此生物的范围加倍或加至三倍，而当生物出于下风处时GM则可减小作用范围。</p>",
                     "ShieldBlock": "<p><strong>触发</strong> 怪物已经举起了盾牌，并且受到一次物理攻击的伤害。</p>\n<hr />\n<p><strong>效果</strong>怪物挺起盾牌格挡了攻击。盾牌使得怪物所受的伤害减少最多等同于盾牌硬度的数值。怪物和盾牌同时承受剩余的伤害，并且这也可能损坏或摧毁盾牌。</p>",
-                    "SneakAttack": "<p>When the monster Strikes a creature that has the @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} condition with an agile or finesse melee weapon, an agile or finesse unarmed attack, or a ranged weapon attack, it also deals the listed precision damage. For a ranged attack with a thrown weapon, that weapon must also be an agile or finesse weapon.</p>",
-                    "Stench": "<p>A creature entering the aura or starting its turn in the area must succeed at a Fortitude save or become @UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{Sickened 1} (plus @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} as long as it's sickened on a critical failure). A creature that succeeds at its save or recovers from being sickened is temporarily immune to all stench auras for 1 minute.</p>",
-                    "SwallowWhole": "<p>The monster attempts to swallow a creature of the listed size or smaller that it has grabbed or restrained in its jaws or mouth. If a swallowed creature is of the maximum size listed, the monster can't use Swallow Whole again. If the creature is smaller than the maximum, the monster can usually swallow more creatures; the GM determines the maximum. The monster attempts an @Check[athletics|defense:reflex] check opposed by the grabbed creature's Reflex DC. If it succeeds, it swallows the creature. The monster's mouth or jaws no longer grab a creature it has swallowed, so the monster is free to use them to Strike or Grab once again. The monster can't attack creatures it has swallowed.</p>\n<p>A swallowed creature is @UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}, is @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1}, and has to hold its breath or start suffocating. The swallowed creature takes the listed amount of damage when first swallowed and at the end of each of its turns while it's swallowed. If the victim @UUID[Compendium.sf2e.actions.Item.SkZAQRkLLkmBQNB9]{Escapes} this ability's grabbed condition, it exits through the monster's mouth. This frees any other creature grabbed in the monster's mouth or jaws. A swallowed creature can attack the monster that has swallowed it, but only with unarmed attacks or with weapons of light Bulk or less. The swallowing creature is @UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard} against the attack. If the monster takes piercing or slashing damage equaling or exceeding the listed Rupture value from a single attack or spell, the swallowed creature cuts itself free. A creature that gets free by either Escaping or cutting itself free can immediately breathe and exits the swallowing monster's space.</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.1cbIe569UD6paXad]{Effect: Engulf and Swallow Whole}</p>\n<p>If the monster dies, a swallowed creature can be freed by creatures adjacent to the corpse if they spend a combined total of 3 actions cutting the monster open with a weapon or unarmed attack that deals piercing or slashing damage.</p>",
+                    "SneakAttack": "<p>当怪物用灵巧或娴熟近战武器、灵巧或娴熟的无武装攻击、或是远距攻击来对@UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}的生物进行打击，它还会造成所列出的精准伤害。用投掷武器来远距攻击的场合，该武器必须为灵巧或娴熟。 </p>",
+                    "Stench": "<p>任何生物若进入此灵光范围或在灵光范围内开始其回合的话，则必须进行一次强韧豁免，失败则会陷入@UUID[Compendium.sf2e.conditions.Item.fesd1n5eVhpCSS18]{恶心1 Sickened 1}（大失败时额外再加上@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢1 Slowed 1}）。豁免成功或从状态中恢复的生物会在一分钟内临时免疫尸臭。</p>",
+                    "SwallowWhole": "<p>怪物尝试吞下一只已被其口嘴所受擒或束缚的体型等于或小于所列体型的生物。如果被吞下的生物的体型已经达到了所列体型的最大值，怪物便无法再次使用活吞。如果生物的体型比最大值要小，则怪物通常而言便还能吞下更多的生物；其具体的极限由GM判断。怪物尝试一次@Check[athletics|defense:reflex]检定对抗被擒抱生物的反射DC。如果检定成功，则能吞下该生物。怪物的口嘴不再擒抱被其吞下的生物，所以怪物能够用其再次进行打击或擒获。怪物无法攻击被其吞下的生物。</p>\n<p>被活吞的生物视为被@UUID[Compendium.sf2e.conditions.Item.kWc1fhmv9LBiTuei]{Grabbed}，且获得@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}，同时必须屏住呼吸，否则便会开始窒息。被吞下的生物在初次被吞以及被吞后的每一轮结束时受到所列出的伤害。如果受害者从这一能力的擒抱状态中@UUID[Compendium.sf2e.actions.Item.SkZAQRkLLkmBQNB9]{Escapes} ，则他会从怪物的嘴里钻出来。这会同时解放怪物口嘴中所擒抱的其他任何生物。被吞下的生物可以攻击那只吞食它的怪物，但是仅能以无武装攻击或是轻负载及更小的武器进行攻击。吞食中的生物在对抗此攻击时@UUID[Compendium.sf2e.conditions.Item.AJh5ex99aV6VTggg]{Off-Guard}。如果怪物于单次攻击或法术中受到的穿刺或挥砍伤害等于或超过所列的破裂Rupture值，那个被吞的生物便重获自由。通过这些法脱困的生物可以立即开始呼吸，并且离开吞食他们的怪物的占据空间。</p>\n<p>@UUID[Compendium.sf2e.bestiary-effects.Item.1cbIe569UD6paXad]{Effect: Engulf and Swallow Whole}</p>\n<p>如果怪物死亡，邻近尸体的生物们可以花费总计3个动作使用武器或者无武装攻击对怪物造成穿刺或挥砍伤害，以此切开怪物并且解放被活吞的生物。</p>",
                     "SwarmMind": "<p>该怪物并没有一个单一的心智（通常是因为它是一个小型生物的集群），并且免疫以特定数量生物为目标的心灵效果。它仍然会受到那些对范围内所有生物起效的心灵效果。</p>",
                     "Telepathy": "<p>具有心灵感应能力的怪物可以与所列半径内任意生物进行心灵交流，然而它们必须能够使用同种语言。这并没有给他们的思维提供特殊的渠道，也无法比正常的开口交流传递更多的信息。</p>",
                     "Thoughtsense": "<p>思维感知允许怪物感知所列范围内的所有心智生物。</p>",
                     "ThrowRock": "<p>怪物从触及范围内捡起一块石头、或是干脆取出一块被收好的石头，然后扔出去，进行一次远程打击。</p>",
                     "Trample": "<p>怪物以其两倍的速度行走，并且可以在移动中穿越所列体型的生物所占据的空间，并且对这些被其进入占据空间的生物发动践踏。在每次使用践踏时，怪物只能对同一名生物尝试一次践踏。怪物造成所列的打击伤害，并且被践踏的生物可以尝试一次基础反射豁免对抗所列DC（大成功不受伤，成功伤害减半，大失败两倍伤害）。</p>",
                     "Tremorsense": "<p>震颤感知允许怪物感受到那些因为移动而引起的固体表面的振动。这是一种在（能力所列出的）有限范围内的模糊感官。只有当怪物位于同一物体的表面、且仅在对象沿着表面移动（或是钻入）时，震颤感知才会生效。</p>",
-                    "TroopDefenses": "<p>Troops are composed of many individuals, represented by four \"segments\" on a battle grid. Each segment is 10 feet on each side and as tall as the individual members of the troop. Segments must remain contiguous. Each one has to share at least 5 feet of one of its edges with another segment—being adjacent on a diagonal isn't sufficient! You can measure flanking, cover, and the like using the center of any segment.</p>\n<p>A troop has two Hit Point thresholds in its HP entry and loses segments as it crosses thresholds. Typically, the higher threshold is at 2/3 of the troop's maximum Hit Points and the lower is at 1/3 of its maximum. Once the troop drops below the higher threshold, it loses one segment, leaving three segments (12 squares) remaining and setting the first threshold as the troop's new maximum Hit Points. This repeats when the troop drops below the lower threshold, leaving two segments (8 squares). At 0 Hit Points, the troop disperses entirely, with the few remaining members surrendering, @UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing}, or easily dispatched, as determined by the GM. Typically the creature who caused the troop to lose a segment decides which to remove, or the GM decides when a specific creature wasn't responsible. To restore lost segments and maximum Hit Points, a troop needs to spend downtime to use long-term treatment on casualties or recruit new members to replace the fallen.</p>\n<p>Troops are typically immune to non-damaging effects that target a single creature, such as a @UUID[Compendium.sf2e.spells.Item.vLA0q0WOK2YPuJs6]{Charm} spell or the @UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralize} action. An ability that can target 5 or more creatures can target an entire segment, increasing to two segments if it can target 10 or more creatures and to the entire troop if it can target 20 or more creatures. An ability that affects all creatures in a certain range affects all segments in range (make any checks or saves separately for each segment). As examples, an 8th rank <em>charm</em> spell (with 10 targets) can affect two segments, and an ability that Demoralizes all creatures within 30 feet of you would affect all segments that are fully within that range. A non-damaging ability that would prevent a segment from acting, cause them to flee, or otherwise make them unable to function as part of the troop for a round or more removes the segment entirely. The troop loses a number of HP required to bring it to the next threshold. If an ability both deals damage and has a non-damaging effect, apply the damage then the rest of the effect.</p>",
+                    "TroopDefenses": "<p>部队由许多个体组成，在战斗网格地图上以四个“部分”表示。每个部分每条边长10尺，高度与部队的单个成员相同。部分必须保持连续。每个部分必须与另一个部分共享至少一条边的5尺——仅在对角线上相邻是不够的！你可以使用任何部分的中心点来测量夹击、掩蔽等。</p>\n<p>部队的HP条目中有两个生命值阈值，越过阈值就会损失部分。通常，较高的阈值为部队生命值的2/3，较低的阈值为部队生命值的1/3。一旦部队下降到较高阈值以下，就会损失一个段落，剩下三个部分（12个方格），并将第一个阈值设定为部队新的最大生命值。当部队下降到较低阈值以下时，会重复这一过程，剩下两个部分（8个方格）。当生命值为0时，部队会完全散开，剩下的少数成员会投降、@UUID[Compendium.sf2e.conditions.Item.sDPxOjQ9kx2RZE8D]{Fleeing}或被轻易打散，具体由GM决定。通常情况下，导致部队损失一个部分的生物会决定移除哪个部分，如果不是某个特定生物造成的，则由GM决定。要恢复损失的分段和最大生命值，部队需要利用休整期对伤亡人员进行长期治疗，或招募新成员替换阵亡人员。</p>\n<p>部队通常对针对单个生物的非伤害性效果免疫，例如@UUID[Compendium.sf2e.spells.Item.vLA0q0WOK2YPuJs6]{Charm}或@UUID[Compendium.sf2e.actions.Item.2u915NdUyQan6uKF]{Demoralize}动作。能以5个或更多生物为目标的能力能够以一整个部分为目标，如果能够以10个或更多生物为目标，则会增加到两个部分，如果能够以20个或更多生物位目标，则会增加到整个部队。影响一定范围内所有生物的能力会影响范围内的所有部分（对每个部分分别进行检定或豁免）。举例来说，一个8环的<em>魅惑术</em>（有10个目标）可以影响两个部分，而一个对你30尺内的所有生物挫败士气的能力会影响完全在该范围内的所有部分。如果一个非伤害性能力会阻止一个部分行动、导致他们逃跑，或使他们在一轮或更长时间内无法作为部队的一部分发挥作用，那么这个部分就会被完全移除。部队会损失一定数量的HP以达到下一个阈值。如果某个能力同时造成伤害和非伤害效果，则先应用伤害，然后再应用其余效果。</p>",
                     "TroopMovement": "<p>每当一支部队移动时，你都会移动其中一个部分，其他部分则跟随其后。移动结束后，你可以根据自己的喜好，将其他部分聚集到与你移动的部分相邻，前提是这些部分的移动距离都不能超过移动的部分。如果你选择不将部队移动任何距离，你可以改为重新调整所有部分的位置，只要其中一个部分保持不动即可。</p>",
                     "Wavesense": "<p>这种感知允许怪物感受到那些因为在液体中移动而产生的振波。这是一种在（能力所列出的）有限范围内的模糊感官imprecise sense。只有当怪物位于同一液体中、且仅在对象在此液体中移动时，水波感知才会生效。</p>"
                 }
@@ -4745,7 +4745,7 @@
         "TraitDescriptionClockwork": "发条生物是复杂的复合型构装体，可以通过编译程序来执行特定的功能。发条生物必须定期上发条才能够运作起来。",
         "TraitDescriptionCoagulant": "具有凝血特征的治疗炼金物品会在短期内的多次使用时失去效力。一名生物在通过具有凝血特征的物品恢复生命值后，其会对随后来自具有凝血特征的物品的治疗临时免疫10分钟（但不免疫这些物品的其他效果）。",
         "TraitDescriptionCoatl": "这些生有羽毛的超自然蛇类族群侍奉各种圣洁神祇，在物质宇宙中担任它们的守卫和信使。",
-        "TraitDescriptionCobbled": "This firearm is cobbled together and likely to misfire. No matter how well you upkeep it, on a failed attack roll, the attack misses and you must roll a @Check[flat|dc:5]. If you fail this check, the weapon misfires.",
+        "TraitDescriptionCobbled": "这把枪是胡乱拼凑在一起的，很可能开不了火。无论你维护得多好，当掷出一次失败的攻击骰时，攻击会失手并且你必须投掷@Check[flat|dc:5]。如果纯骰检定失败，武器会哑火。",
         "TraitDescriptionCoda": "<p>具有尾声特征的乐器在工作机理上类似于法杖，并且拥有法杖特征。尾声乐器与法杖之间的不同主要有以下两点：一、尾声乐器以音乐器具的形式存在，并且只有吟游诗人才能预备它们。二、由于尾声乐器在物理形态上并非杖，所以你不能使用尾声乐器进行攻击，也不能在其上蚀刻武器符文。</p><p>预备尾声乐器需要演奏部分乐曲的重点章节，这些乐曲与尾声乐器内所蕴含的法术紧密相关——无论它们是来自古老的注解，还是你自己的独家创造。演奏将会在乐器内留下魔法回响，如此一来，你便能利用它们在接下来的一天内，仅仅通过演奏乐曲章节的结尾片段——也就是“尾声”，来完成整首歌谣。</p>",
         "TraitDescriptionCold": "拥有此特征的效果造成寒冷伤害。具有此特征的生物与魔法寒冷有某种联系。",
         "TraitDescriptionCombination": "组合武器以独特或不同寻常的方式将近战武器和火器结合起来。组合武器既有火器形态的用法，也有近战武器形态的用法。",
@@ -5073,7 +5073,7 @@
         "TraitDescriptionSteam": "具有这种特性的物品由发动机提供动力，发动机用沸水产生蒸汽并驱动部件。",
         "TraitDescriptionStheno": "Stheno are humanoids related to medusas, with snakes for hair.",
         "TraitDescriptionStrix": "有翅膀的人形生物，大多数生活在切利亚斯及其周围。",
-        "TraitDescriptionStructure": "A spell, item activation, or ability with the structure trait creates a magical building or other structure. The structure must be created on a plot of land free of other structures. The structure adapts to the natural terrain, adopting the structural requirements for being built there. The structure adjusts around small features such as ponds or spires of rock, but it can't be created on water or other nonsolid surfaces. If created on snow, sand dunes, or other soft surfaces with a solid surface underneath, the structure's foundation (if any) reaches the solid ground. If the structure is on a solid but unstable surface, such as a swamp or an area plagued by tremors, roll a @Check[flat|dc:3] each day; on a failure, the structure begins to sink or collapse.</p><p>The structure doesn't harm creatures within the area when it appears, and it can't be created within a crowd or in a densely populated area. Any creature inadvertently caught inside the structure when it's created ends up unharmed inside the complete structure and always has a clear path of escape. A creature inside the structure when the effect ends isn't harmed, and it lands harmlessly on the ground if it was on an upper level of the structure",
+        "TraitDescriptionStructure": "拥有构造物特征的法术、可启动物品或能力可以创造魔法建筑或其它构造物。构造物必须在一片没有其他构造物的地面上被创造。该构造物会自动适应自然地形，并适用当地建筑的建筑需求。构造物细节部分可根据诸如人工池或石尖顶之类自动调整，但它不能在水面或其它非固体表面生成。若在雪地、沙丘或其它有着固体底部的软性地面上生成，该构造物的地基（若有）会深入直达固体底部。若构造物位于固体但不稳定的表面上——比如沼泽或地震区域——每天需要骰1个@Check[flat|dc:3]检定；若失败，构造物会开始下沉或塌陷。构造物在生成时不会伤害区域内的生物，也不能在人群或人员拥挤的区域生成。当构造物生成时，任何无意中被困其中的生物最终都会无伤地留在构造物内，并且总是有一条清晰的离开路径。位于构造物内的生物在效果终止后不会受伤，若人员在构造物的高层，他们会无伤地降落在地面上",
         "TraitDescriptionSubjectiveGravity": "在具有主观重力特征的位面上，所有具有质量的物体都拥有相同重力的重力中心，但只在一个非无心智的生物希望时才会如此。",
         "TraitDescriptionSubtle": "具有微妙特性的法术可以在没有咒语的情况下施展，并且没有明显的表现。",
         "TraitDescriptionSuli": "巨灵裔是小巨灵群体后裔的族裔。",
@@ -5273,7 +5273,7 @@
         "TraitGhul": "鬼巨灵",
         "TraitGiant": "巨人",
         "TraitGigas": "吉伽斯",
-        "TraitGirtablilu": "Girtablilu",
+        "TraitGirtablilu": "半蝎人语",
         "TraitGnoll": "鬣狗人",
         "TraitGnome": "侏儒",
         "TraitGoblin": "地精",
@@ -5353,7 +5353,7 @@
         "TraitInventor": "发明家",
         "TraitInvested": "绑定",
         "TraitInvestigator": "调查员",
-        "TraitJinsul": "Jinsul",
+        "TraitJinsul": "烬蛛语",
         "TraitJotunborn": "巨人裔",
         "TraitJousting": "骑战",
         "TraitJoustingD10": "骑战 d10",
@@ -5371,7 +5371,7 @@
         "TraitKingdom": "王国",
         "TraitKitsune": "狐妖",
         "TraitKobold": "狗头人",
-        "TraitKothama": "Kothama",
+        "TraitKothama": "科萨玛语",
         "TraitKovintus": "Kovintus",
         "TraitKucharn": "Kucharn",
         "TraitLaminar": "分层",
@@ -5462,7 +5462,7 @@
         "TraitPiercing": "穿刺",
         "TraitPlant": "植物",
         "TraitPoison": "毒素",
-        "TraitPolymer": "Polymer",
+        "TraitPolymer": "聚合甲",
         "TraitPolymorph": "变形",
         "TraitPonderous": "笨重",
         "TraitPoppet": "人偶",
@@ -5522,7 +5522,7 @@
         "TraitReload1Min": "装填 1分钟",
         "TraitReload2": "装填 2",
         "TraitRepeating": "连发",
-        "TraitResilient": "Resilient",
+        "TraitResilient": "韧性",
         "TraitResilient1": "韧性 +1",
         "TraitResilient2": "韧性 +2",
         "TraitResilient3": "韧性 +3",
@@ -5671,7 +5671,7 @@
         "TraitUnstable": "不稳定",
         "TraitUntyped": "无名",
         "TraitUnwieldy": "粗笨",
-        "TraitUpgrade": "Upgrade",
+        "TraitUpgrade": "升级",
         "TraitUrdefhan": "透肌魔人",
         "TraitVampire": "吸血鬼",
         "TraitVanara": "灵猴裔",
@@ -6012,7 +6012,7 @@
                 "gyrojet-pistol": "爆弹手枪",
                 "halberd": "长戟",
                 "halfling-sling-staff": "半身人投石杖",
-                "hammer": "Hammer",
+                "hammer": "锤",
                 "hammer-gun": "锤枪",
                 "hand-adze": "轻扁斧",
                 "hand-cannon": "手炮",
@@ -6247,7 +6247,7 @@
         "WeaponGroupFirearm": "火器",
         "WeaponGroupFlail": "连枷",
         "WeaponGroupFlame": "燃焰",
-        "WeaponGroupGrenade": "Grenade",
+        "WeaponGroupGrenade": "手雷",
         "WeaponGroupHammer": "锤",
         "WeaponGroupKnife": "短刃",
         "WeaponGroupLabel": "武器组",
@@ -6255,7 +6255,7 @@
         "WeaponGroupMental": "心灵",
         "WeaponGroupPick": "镐",
         "WeaponGroupPlasma": "Plasma",
-        "WeaponGroupPoison": "Poison",
+        "WeaponGroupPoison": "毒素",
         "WeaponGroupPolearm": "长武",
         "WeaponGroupProjectile": "射弹",
         "WeaponGroupShield": "盾牌",
@@ -6280,20 +6280,20 @@
             "anchoring": {
                 "Name": "锚定",
                 "Note": {
-                    "criticalSuccess": "If you critically hit a target with an anchoring weapon, the weapon casts @UUID[Compendium.sf2e.spells.Item.ksLCg62cLOojw3gN]{Dimensional Anchor} on the target (@Check[will|dc:27|name:Anchoring Rune], counteract modifier [[/r 1d20+17 # Anchoring Rune Counteract Check]]{+17})."
+                    "criticalSuccess": "如果你用锚定武器对目标重击，武器会在目标上施放@UUID[Compendium.sf2e.spells.Item.ksLCg62cLOojw3gN]{Dimensional Anchor}（@Check[will|dc:27|name:Anchoring Rune]，反制调整值[[/r 1d20+17 # Anchoring Rune Counteract Check]]{+17}）。"
                 }
             },
             "ashen": {
                 "Name": "灰烬",
                 "Note": {
-                    "success": "This ash clouds the senses, causing the creature to become @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round unless it succeeds at a @Check[will|dc:25] save."
+                    "success": "这种灰烬模糊了感官，导致生物在1轮中变得@UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused}，除非它在@Check[will|dc:25]豁免中成功。"
                 }
             },
             "astral": {
                 "Name": "星魂",
                 "Note": {
-                    "criticalSuccess": "On a critical hit against a creature possessing another creature, the possessing creature must succeed at a @Check[will|dc:26] save or be expelled and unable to possess a creature for [[/gmr 1d4 #rounds]]{1d4 rounds}.",
-                    "Note": "This rune has the same effects as a @UUID[Compendium.sf2e.equipment.Item.JQdwHECogcTzdd8R]{Ghost Touch} rune. If used to attack a creature that's possessing another creature, this weapon deals no damage to the possessed creature."
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:26]豁免，失败则被驱逐，并在[[/gmr 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
+                    "Note": "该符文拥有与@UUID[Compendium.sf2e.equipment.Item.JQdwHECogcTzdd8R]{Ghost Touch}符文相同的效果。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
                 }
             },
             "authorized": {
@@ -6308,7 +6308,7 @@
             "bloodthirsty": {
                 "Name": "嗜血",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target that's taking @UUID[Compendium.sf2e.conditions.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}, your target becomes @UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{Drained 1}."
+                    "criticalSuccess": "当你重击一个正在受到@UUID[Compendium.sf2e.conditions.Item.lDVqvLKA6eF3Df60]{持续流血伤害}的目标时，目标陷入@UUID[Compendium.sf2e.conditions.Item.4D2KBtexWXa6oUMR]{流失 Drained 1}。"
                 }
             },
             "bolkasBlessing": {
@@ -6317,7 +6317,7 @@
             "brilliant": {
                 "Name": "辉煌",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the target must succeed at a @Check[fortitude|dc:29|name:Brilliant Rune] save or be @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round."
+                    "criticalSuccess": "重击时，目标必须通过一次成功的@Check[fortitude|dc:29|name:Brilliant Rune]豁免否则陷入@UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded}一轮。"
                 }
             },
             "called": {
@@ -6332,13 +6332,13 @@
             "corrosive": {
                 "Name": "侵蚀",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the target's armor (if any) takes @Damage[3d6[acid]] damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead."
+                    "criticalSuccess": "重击时，目标的盔甲受到@Damage[3d6[acid]]伤害(计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。"
                 }
             },
             "crushing": {
                 "Name": "粉碎",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target with this weapon, your target becomes @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} and @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of your next turn. @UUID[Compendium.sf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effect: Crushing}"
+                    "criticalSuccess": "当你用此武器造成一次重击时，你的目标陷入@UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}和@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}，直到你的下回合结束。@UUID[Compendium.sf2e.equipment-effects.Item.zNHvhwHsC8ckhKVp]{Effect: Crushing}"
                 }
             },
             "cunning": {
@@ -6371,7 +6371,7 @@
             "fearsome": {
                 "Name": "畏怖",
                 "Note": {
-                    "criticalSuccess": "When you critically hit with this weapon, the target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 1}."
+                    "criticalSuccess": "当你用此武器重击时，目标陷入@UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 1}。"
                 }
             },
             "flaming": {
@@ -6383,7 +6383,7 @@
             "flickering": {
                 "Name": "隐现",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the weapon flashes bright pulses of color into the creature's eyes, @UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzling} the creature for 1 round (this effect has the visual trait)."
+                    "criticalSuccess": "重击时，武器会向生物的眼睛放射明亮的色彩脉冲，使生物@UUID[Compendium.sf2e.conditions.Item.TkIyaNPgTZFBCCuh]{Dazzling}1轮（此效果具有视觉特征）。"
                 }
             },
             "flurrying": {
@@ -6392,7 +6392,7 @@
             "frost": {
                 "Name": "冻寒",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the target is also @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your next turn unless it succeeds at a @Check[fortitude|dc:24|name:Frost Rune] save."
+                    "criticalSuccess": "重击时，除非成功通过一次@Check[fortitude|dc:24|name:Frost Rune]豁免，否则目标陷入@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你的下回合结束。"
                 }
             },
             "ghostTouch": {
@@ -6402,27 +6402,27 @@
             "giantKilling": {
                 "Name": "杀戮巨人",
                 "Note": {
-                    "criticalSuccess": "On a critical hit with this weapon, the giant is also @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of your next turn."
+                    "criticalSuccess": "若使用该武器重击，巨人直到你的下一回合结束为止陷入@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 }
             },
             "greaterAnchoring": {
                 "Name": "高等锚定",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target with a weapon with the anchoring rune, the weapon casts 8th-rank @UUID[Compendium.sf2e.spells.Item.ksLCg62cLOojw3gN]{Dimensional Anchor} on the target (@Check[will|dc:38|name:Greater Anchoring Rune], counteract modifier [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}), except that if the target critically succeeds at its Will save, instead of having no effect, the <em>dimensional anchor</em> lasts for 1 round.",
-                    "success": "When you hit a target with the weapon but don't critically hit, the target is affected by 4th-rank @UUID[Compendium.sf2e.spells.Item.ksLCg62cLOojw3gN]{Dimensional Anchor} for 1 round without a save (counteract modifier [[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})."
+                    "criticalSuccess": "当你用锚定武器重击一个目标时, 武器对目标施放8环@UUID[Compendium.sf2e.spells.Item.ksLCg62cLOojw3gN]{Dimensional Anchor}（@Check[will|dc:38|name:Greater Anchoring Rune]，反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28}），如果目标的意志豁免检定大成功， <em>次元拴绳</em>至少会持续一轮，而不是没有效果。",
+                    "success": "当你用该武器命中一个目标但没有重击时，目标受到四环@UUID[Compendium.sf2e.spells.Item.ksLCg62cLOojw3gN]{Dimensional Anchor}效果影响一轮且没有豁免(反制调整值[[/r 1d20+28 #Greater Anchoring Rune Counteract Check]]{+28})。"
                 }
             },
             "greaterAshen": {
                 "Name": "高等灰烬",
                 "Note": {
-                    "success": "This ash clouds the senses, causing the creature to become @UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused} for 1 round unless it succeeds at a @Check[will|dc:35] save. On a critical failure, the effect lasts for 1 minute."
+                    "success": "这种灰烬模糊了感官，导致生物在1轮中陷入@UUID[Compendium.sf2e.conditions.Item.yblD8fOR1J8rDwEQ]{Confused}，除非它在@Check[will|dc:35]豁免中成功。大失败时，影响持续1分钟。"
                 }
             },
             "greaterAstral": {
                 "Name": "高等星魂",
                 "Note": {
-                    "criticalSuccess": "On a critical hit against a creature possessing another creature, the possessing creature must succeed at a @Check[will|dc:36] save or be expelled and unable to possess a creature for [[/gmr 1d4 #rounds]]{1d4 rounds}.",
-                    "Note": "This rune has the same effects as a @UUID[Compendium.sf2e.equipment.Item.JQdwHECogcTzdd8R]{Ghost Touch} rune. If used to attack a creature that's possessing another creature, this weapon deals no damage to the possessed creature."
+                    "criticalSuccess": "重击命中一个正占据另一生物躯体的生物时，占据者必须成功通过@Check[will|dc:36]豁免，失败则被驱逐，并在[[/gmr 1d4 #rounds]]{1d4轮}内无法再占据其他生物的躯体。",
+                    "Note": "该符文拥有与@UUID[Compendium.sf2e.equipment.Item.JQdwHECogcTzdd8R]{Ghost Touch}符文相同的效果。如果用其攻击一个正在占据另一生物的生物，该武器不会对被占据生物造成伤害。"
                 }
             },
             "greaterBloodbane": {
@@ -6434,21 +6434,21 @@
             "greaterBrilliant": {
                 "Name": "高等辉煌",
                 "Note": {
-                    "criticalSuccess": "Damage dealt by this weapon ignores the target's resistances to fire, spirit, and vitality. On a critical hit, the target must succeed at a @Check[fortitude|dc:41|name:Greater Brilliant Rune] save or be @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded} for 1 round.",
+                    "criticalSuccess": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。重击时, 目标必须成功通过一个@Check[fortitude|dc:41|name:Greater Brilliant Rune]豁免否则陷入 @UUID[Compendium.sf2e.conditions.Item.XgEqL1kFApUbl5Z2]{Blinded}一轮。",
                     "success": "该武器造成的伤害忽略目标的火焰、精魂或命能的抗力。"
                 }
             },
             "greaterCorrosive": {
                 "Name": "高等侵蚀",
                 "Note": {
-                    "criticalSuccess": "The acid damage dealt by this weapon ignores the target's acid resistance. On a critical hit, the target's armor (if any) takes @Damage[6d6[acid]] damage (before applying Hardness); if the target has a shield raised, the shield takes this damage instead.",
+                    "criticalSuccess": "该武器造成的酸蚀伤害无视酸蚀抗力。 重击时，目标的盔甲受到@Damage[6d6[acid]]伤害 (计算硬度之前)；如果目标举起了一块盾牌，则盾牌会代替受到这次伤害。",
                     "success": "该武器造成的酸蚀伤害无视酸蚀抗力。"
                 }
             },
             "greaterCrushing": {
                 "Name": "高等粉碎",
                 "Note": {
-                    "criticalSuccess": "Your critical hits leave the target @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 2} and @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of your next turn. @UUID[Compendium.sf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]{Effect: Crushing (Greater)}"
+                    "criticalSuccess": "你的重击使目标陷入@UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 2}和@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}，直到你的下回合结束。@UUID[Compendium.sf2e.equipment-effects.Item.czdEHtLsrUcZxSDx]{Effect: Crushing (Greater)}"
                 }
             },
             "greaterDecaying": {
@@ -6457,7 +6457,7 @@
             "greaterDisrupting": {
                 "Name": "高等命源",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the undead creature is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} and @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} as long as it has the persistent damage from this rune."
+                    "criticalSuccess": "重击时，在此符文造成持续伤害期间，目标不死生物陷入@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}和@UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。"
                 }
             },
             "greaterExtending": {
@@ -6469,7 +6469,7 @@
             "greaterFearsome": {
                 "Name": "高等畏怖",
                 "Note": {
-                    "criticalSuccess": "When you critically hit with this weapon, the target becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2}."
+                    "criticalSuccess": "当你用此武器重击时，目标陷入@UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。"
                 }
             },
             "greaterFlaming": {
@@ -6482,7 +6482,7 @@
             "greaterFrost": {
                 "Name": "高等冻寒",
                 "Note": {
-                    "criticalSuccess": "Cold damage dealt by this weapon ignores the target's cold resistance. On a critical hit, the target is also @UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{Slowed 1} until the end of your next turn unless it succeeds at a @Check[fortitude|dc:34|name:Greater Frost Rune] save.",
+                    "criticalSuccess": "该武器造成的寒冷伤害忽略目标的寒冷抗力。重击时，除非成功通过一个@Check[fortitude|dc:34|name:Greater Frost Rune]豁免，否则目标陷入@UUID[Compendium.sf2e.conditions.Item.xYTAsEpcJE1Ccni3]{缓慢 Slowed 1}直到你下一回合结束。",
                     "success": "该武器造成的寒冷伤害忽略目标的寒冷抗力。"
                 }
             },
@@ -6490,7 +6490,7 @@
                 "Name": "高等杀戮巨人",
                 "Note": {
                     "success": "该武器造成的心灵伤害忽视心灵抗力。",
-                    "criticalSuccess": "On a critical hit with this weapon, the giant must attempt a @Check[fortitude|dc:34] with the following effects.<br /><strong>Critical Success</strong> The giant is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of your next turn.<br /><strong>Success</strong> The giant is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} until the end of your next turn and takes @Damage[1d10[mental]].<br /><strong>Failure</strong> The giant is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} for the next minute and takes @Damage[2d10[mental]].<br/><strong>Critical Failure</strong> The giant is @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 4} for the next minute and takes @Damage[4d10[mental]]."
+                    "criticalSuccess": "当使用这个武器进行重击时，巨人必须进行一次@Check[fortitude|dc:34]检定，效果如下。<br /><strong>大成功</strong> 巨人陷入@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}直到你的下个回合结束。<br /><strong>成功</strong> 巨人陷入@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}直到你的下个回合结束，并受到@Damage[1d10[mental]]伤害。<br /><strong>失败</strong> 巨人在接下来的一分钟内陷入@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 2}并受到@Damage[2d10[mental]]伤害。<br/><strong>大失败</strong> 巨人在接下来的一分钟内陷入@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 4}并受到@Damage[4d10[mental]]伤害。"
                 }
             },
             "greaterHauling": {
@@ -6499,7 +6499,7 @@
             "greaterImpactful": {
                 "Name": "高等冲击",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, you can choose to force the target to succeed at a @Check[fortitude|dc:37|name:Greater Impactful Rune] save or be pushed 10 feet away from you."
+                    "criticalSuccess": "重击时，你可以选择推动目标，目标必须通过@Check[fortitude|dc:37|name:Greater Impactful Rune]豁免检定，否则将被推离10尺，方向为你所在位置相反的方向。"
                 }
             },
             "greaterKolssOath": {
@@ -6508,7 +6508,7 @@
             "greaterRooting": {
                 "Name": "高等生根",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target with this weapon, roots grow from the target. It's @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{immobilized} for 1 round ([[/act escape dc=28]]) and @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for as long as the immobilization lasts."
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=28]]），并在禁足持续期间 @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 }
             },
             "greaterShock": {
@@ -6521,7 +6521,7 @@
             "greaterThundering": {
                 "Name": "高等雷鸣",
                 "Note": {
-                    "criticalSuccess": "Sonic damage dealt by this weapon ignores the target's sonic resistance. On a critical hit, the target has to succeed at a @Check[fortitude|dc:34|name:Greater Thundering Rune] save or be @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} permanently.",
+                    "criticalSuccess": "该武器造成的音波伤害忽视音波抗力。 重击时，目标必须成功通过一个@Check[fortitude|dc:34|name:Greater Thundering Rune]豁免，否则永久陷入@UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened}。",
                     "success": "该武器造成的音波伤害忽视音波抗力。"
                 }
             },
@@ -6536,11 +6536,11 @@
                     "Brawling": "目标的豁免获得-4环境减值。",
                     "Club": "你可以击退目标最多15尺远。",
                     "Crossbow": "若被重击的目标与一个平面相邻，它会被导弹钉住，效果同弓的重击专精效果。",
-                    "Dart": "The base persistent bleed damage increases to @Damage[2d6[persistent,bleed]].",
+                    "Dart": "基础持续流血伤害提升为@Damage[2d6[persistent,bleed]]。",
                     "Firearm": "目标在豁免上承受-4环境减值。",
                     "Flail": "你移动目标5尺。你无法将其移动远离你，但可以按你所想将其移动到你的另一个方位上。",
                     "Hammer": "你还可以将其击退离你5尺远。",
-                    "Knife": "The target takes a -5-foot status penalty to its Speed while it has the @UUID[Compendium.sf2e.conditions.Item.lDVqvLKA6eF3Df60]{Persistent Bleed Damage}.",
+                    "Knife": "只要目标还受到该@UUID[Compendium.sf2e.conditions.Item.lDVqvLKA6eF3Df60]{持续流血伤害}，其速度获得-5尺状态减值。",
                     "Pick": "重击专精效果的额外伤害增加为每颗武器伤害骰4点。",
                     "Polearm": "你可以移动目标最多10尺。",
                     "Shield": "你可以击退目标最多10尺远。",
@@ -6573,7 +6573,7 @@
             "impactful": {
                 "Name": "冲击",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, you can choose to force the target to succeed at a @Check[fortitude|dc:27|name:Impactful Rune] save or be pushed 5 feet away from you."
+                    "criticalSuccess": "重击时，你可以选择推动目标，目标必须通过@Check[fortitude|dc:27|name:Impactful Rune]豁免检定，否则将被推离5尺，方向为你所在位置相反的方向。"
                 }
             },
             "impossible": {
@@ -6591,7 +6591,7 @@
             "majorRooting": {
                 "Name": "上等生根",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target with this weapon, roots grow from the target. It's @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{immobilized} for 1 round ([[/act escape dc=34]]) and @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for as long as the immobilization lasts."
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=34]]），并在禁足持续期间 @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 }
             },
             "merciful": {
@@ -6603,7 +6603,7 @@
             "nightmare": {
                 "Name": "梦魇",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the target becomes @UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{Stupefied 1} by overwhelming visions in their mind of personal horrors that linger. If you critically hit a creature that's already stupefied, it becomes @UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{Frightened 2} as well. These critical hit effects have the emotion, fear, and mental traits."
+                    "criticalSuccess": "重击时，目标会因脑海中挥之不去的个人恐怖幻象而陷入@UUID[Compendium.sf2e.conditions.Item.e1XGnhKNSQIm5IXg]{呆滞 Stupefied 1}。如果你重创了一个已经陷入呆滞的生物，它也会陷入@UUID[Compendium.sf2e.conditions.Item.TBSHQspnbcqxsmjL]{惊惧 Frightened 2}。这些重击效果具有情绪、恐惧和心灵特征。"
                 }
             },
             "pacifying": {
@@ -6611,7 +6611,7 @@
             },
             "speed": {
                 "Name": "迅击",
-                "Note": "While wielding a quickstrike weapon, you gain the @UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened} condition, but you can use the additional action granted only to make a Strike with the etched weapon."
+                "Note": "当持用一把加速武器时，你获得@UUID[Compendium.sf2e.conditions.Item.nlCjDvLMf2EkV2dl]{Quickened}状态，但你只能用这个额外的动作使用该武器进行打击动作。"
             },
             "returning": {
                 "Name": "回力",
@@ -6620,7 +6620,7 @@
             "rooting": {
                 "Name": "生根",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target with this weapon, roots grow from the target. It's @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{immobilized} for 1 round ([[/act escape dc=23]]) and @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for as long as the immobilization lasts."
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=23]]），并在禁足持续期间 @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 }
             },
             "serrating": {
@@ -6648,7 +6648,7 @@
             "thundering": {
                 "Name": "雷鸣",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the target has to succeed at a @Check[fortitude|dc:24|name:Thundering Rune] save or be @UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened} for 1 minute (or 1 hour on a critical failure)."
+                    "criticalSuccess": "当造成一次重击时， 目标必须成功通过一次@Check[fortitude|dc:24|name:Thundering Rune]豁免，否则陷入@UUID[Compendium.sf2e.conditions.Item.9PR9y0bi4JPKnHPR]{Deafened}一分钟(大失败时变为一小时)。"
                 }
             },
             "truddsStrength": {
@@ -6657,7 +6657,7 @@
             "trueRooting": {
                 "Name": "真实生根",
                 "Note": {
-                    "criticalSuccess": "When you critically hit a target with this weapon, roots grow from the target. It's @UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{immobilized} for 1 round ([[/act escape dc=41]]) and @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{Clumsy 1} for as long as the immobilization lasts."
+                    "criticalSuccess": "当你用这个武器对目标造成重击时，根须从目标处生长而出。生物被@UUID[Compendium.sf2e.conditions.Item.eIcWbB5o3pP6OIMe]{禁足 immobilized}1轮（[[/act escape dc=41]]），并在禁足持续期间 @UUID[Compendium.sf2e.conditions.Item.i3OJZU2nk64Df3xm]{笨拙 Clumsy 1}。"
                 }
             },
             "underwater": {
@@ -6672,13 +6672,13 @@
             "disrupting": {
                 "Name": "命源",
                 "Note": {
-                    "criticalSuccess": "On a critical hit, the undead is also @UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} until the end of your next turn."
+                    "criticalSuccess": "若重击，目标不死生物直到你的下一回合结束为止获得@UUID[Compendium.sf2e.conditions.Item.MIRkyAjyBeXivMa7]{力竭 Enfeebled 1}。"
                 }
             },
             "vorpal": {
                 "Name": "斩首",
                 "Note": {
-                    "criticalSuccess": "Snicker-Snack <span class=\"action-glyph\">R</span> (concentrate, death, incapacitation)</p><p><strong>Trigger</strong> You roll a natural 20 on a Strike with the weapon against a creature that has a head, critically succeed, and deal slashing damage</p><hr /><p><strong>Effect</strong> The target must succeed at a @Check[fortitude|dc:37|traits:death,incapacitation|name:Vorpal Rune] save or be decapitated. This kills any creature except ones that don't require a head to live. For creatures with multiple heads, this usually kills the creature only if you sever its last head."
+                    "criticalSuccess": "不平则鸣 Snicker-Snack <span class=\"action-glyph\">R</span> (专注，死亡，失能)</p><p><strong>触发</strong> 你使用这把武器对有头生物的打击掷出了自然20，造成了重击，且为挥砍伤害</p><hr /><p><strong>效果</strong> 目标必须成功通过一次@Check[fortitude|dc:37|traits:death,incapacitation|name:斩首]豁免，否则将被斩首。这会立即杀死任何生物，除非其不需要头也能存活。对于拥有多头的生物，你通常需要砍下它的最后一颗头颅才能将其杀死。"
                 }
             },
             "wounding": {
@@ -6808,13 +6808,13 @@
             },
             "concealed": {
                 "name": "隐蔽",
-                "rules": "<p>While you are concealed from a creature, such as in a thick fog, you are difficult for that creature to see. You can still be observed, but you're tougher to target. A creature that you're concealed from must succeed at a @Check[flat|dc:5|name:Concealed|showDC:all] when targeting you with an attack, spell, or other effect.</p>\n<p>Area effects aren't subject to this flat check. If the check fails, the attack, spell, or effect doesn't affect you.</p>",
+                "rules": "<p>例如处在薄雾中的你难以被某生物看到，即说你对该生物处于隐蔽状态。你依然可见，但很难被瞄准。你对其隐蔽的生物因攻击、法术或其它效果而试图瞄准你时，需要成功通过@Check[flat|dc:5|name:Concealed|showDC:all] 检定。</p>\n<p>区域效果无需进行此纯骰检定。若检定失败，该次攻击、法术或效果不会影响你。</p>",
                 "summary": "雾气或类似障碍物让你不能被轻易看到和瞄准。"
             },
             "confused": {
                 "name": "困惑",
-                "note": "Each time you take damage from an attack or spell, you can attempt a @Check[flat|dc:11|name:Confused|showDC:all] to recover from your confusion and end the condition.",
-                "rules": "<p>You don't have your wits about you, and you attack wildly. You are off-guard, you don't treat anyone as your ally (though they might still treat you as theirs), and you can't Delay, Ready, or use reactions.<p></p>You use all your actions to Strike or cast offensive cantrips, though the GM can have you use other actions to facilitate attack, such as draw a weapon, move so that a target is in reach, and so forth. Your targets are determined randomly by the GM. If you have no other viable targets, you target yourself, automatically hitting but not scoring a critical hit. If it's impossible for you to attack or cast spells, you babble incoherently, wasting your actions.</p>\n<p>Each time you take damage from an attack or spell, you can attempt a @Check[flat|dc:11|name:Confusion Recovery|showDC:all] to recover from your confusion and end the condition.</p>",
+                "note": "每当你受到攻击或法术伤害时，你可以尝试一次@Check[flat|dc:11|name:Confused|showDC:all] 来从你的困惑状态中恢复并结束该状态。",
+                "rules": "<p>你失去了冷静，攻击变得大开大合。你进入措手不及状态，你不能将任何单位视为盟友（他们依然能将你视为盟友），你无法进行延迟、准备，也无法使用反应动作。</p><p>你必须使用所有动作进行打击或施放进攻性戏法，GM可以允许你使用其它辅助攻击的动作，例如拔出武器，移动靠近使敌人进入自己的触及内，等等。你的目标由GM随机决定。若你无可视的目标，就会瞄准自己，自动命中自己，但不会造成重击。若对你而言攻击或施法无法完成，你会口出狂言喋喋不休，浪费自己的动作。</p>\n<p>每当你因攻击或法术受到伤害时，可进行一次@Check[flat|dc:11|name:Confusion Recovery|showDC:all]检定，成功则从困惑中恢复，终止该状态。</p>",
                 "summary": "你的攻击漫无目的。"
             },
             "controlled": {
@@ -6833,8 +6833,8 @@
             },
             "deafened": {
                 "name": "耳聋",
-                "note": "If you perform an action that has the auditory trait, you must succeed at a @Check[flat|dc:5|name:Deafened|showDC:all] or the action is lost.",
-                "rules": "<p>You can't hear. You automatically critically fail Perception checks that require you to be able to hear. You take a -2 status penalty to Perception checks for initiative and checks that involve sound but also rely on other senses. If you perform an action with the auditory trait, you must succeed at a @Check[flat|dc:5|name:Deafened|showDC:all] or the action is lost; attempt the check after spending the action but before any effects are applied. You are immune to auditory effects.</p>",
+                "note": "如果你进行具有听觉特性的动作，你必须在@Check[flat|dc:5|name:Deafened|showDC:all]中成功，否则该动作会失败。",
+                "rules": "<p>你听不到声音。你在需要你听的察觉检定上自动大失败。你在用察觉进行的先攻检定，和包括声音但也依赖其它感官的察觉检定上都获得-2状态减值。若你进行拥有听觉特征的动作，你必须通过@Check[flat|dc:5|name:Deafened|showDC:all] 检定，失败则失去该动作；该检定在消耗动作后，在动作生效前。你免疫听觉效果。</p>",
                 "summary": "你的耳旁一片寂静。"
             },
             "doomed": {
@@ -6894,8 +6894,8 @@
             },
             "grabbed": {
                 "name": "擒抱",
-                "note": "If you attempt a manipulate action while grabbed, you must succeed at a @Check[flat|dc:5|name:Grabbed|showDC:all] or it is lost.",
-                "rules": "<p>You're held in place by another creature, giving you the off-guard and immobilized conditions. If you attempt a manipulate action while grabbed, you must succeed at a @Check[flat|dc:5|name:Grabbed|showDC:all] or it is lost; roll the check after spending the action, but before any effects are applied.</p>",
+                "note": "如果你在被擒抱时尝试进行一个操作动作，你必须成功通过 @Check[flat|dc:5|name:Grabbed|showDC:all]检定，否则该动作会失败。",
+                "rules": "<p>你被其它生物固定在原处，使你获得措手不及状态和禁足状态。被擒抱时若你尝试使用拥有操作特征的动作，你必须通过@Check[flat|dc:5|name:Grabbed|showDC:all]检定，失败则失去该动作；该检定在消耗动作后，效果生效前进行。</p>",
                 "summary": "生物、物体或魔法让你被定在原地。"
             },
             "group": {
@@ -6911,7 +6911,7 @@
             },
             "hidden": {
                 "name": "藏匿",
-                "rules": "<p>While you're hidden from a creature, that creature knows the space you're in but can't tell precisely where you are. You typically become hidden by using Stealth to Hide. When Seeking a creature using only imprecise senses, it remains hidden, rather than observed. A creature you're hidden from is off-guard to you, and it must succeed at a @Check[flat|dc:11|name:Hidden|showDC:all] when targeting you with an attack, spell, or other effect or it fails affect you. Area effects aren't subject to this flat check.</p>\n<p>A creature might be able to use the Seek action to try to observe you.</p>",
+                "rules": "<p>当你对某生物处于藏匿状态时，该生物大致知道你的位置，但无法精确定位你在哪里。通常你会因使用隐秘技能的躲藏动作而进入藏匿状态。若只用不精确的感官搜索你，则你依然能保持藏匿状态，而不会变成可见状态。你对其为藏匿状态的生物，对你也为措手不及状态，且其攻击、法术或其它效果瞄准你时，必须通过@Check[flat|dc:11|name:Hidden|showDC:all] ，失败则无法影响到你。区域效果无需进行该纯骰检定。</p>\n<p>生物可以使用搜索动作尝试观察到你 。</p>",
                 "summary": "生物知道你在哪但没法看到你。"
             },
             "hostile": {
@@ -6946,7 +6946,7 @@
             },
             "persistent-damage": {
                 "name": "持续伤害",
-                "rules": "<p>Persistent damage comes from effects like acid, being on fire, or many other situations. It appears as \"X persistent [type] damage,\" where \"X\" is the amount of damage dealt and \"[type]\" is the damage type. Instead of taking persistent damage immediately, you take it at the end of each of your turns as long as you have the condition, rolling any damage dice anew each time. After you take persistent damage, roll a @Check[flat|dc:15] to see if you recover from the persistent damage. If you succeed, the condition ends.</p>",
+                "rules": "<p>持续伤害会因例如酸液、着火或类型情形而获得。它的写法是“X持续[类型]伤害”，X是数值而[类型]是伤害类型。你不会立刻受到持续伤害，而是在获得状态后你的回合结束时受伤，每次都要骰伤害骰。在你受到持续伤害后，若你想摆脱持续伤害，骰@Check[flat|dc:15]。若成功，对应持续伤害终止。</p>",
                 "summary": "你每轮持续受到伤害。"
             },
             "petrified": {
@@ -6988,7 +6988,7 @@
             },
             "stupefied": {
                 "name": "呆滞",
-                "note": "Any time you attempt to @UUID[Compendium.sf2e.actions.Item.aBQ8ajvEBByv45yz]{Cast a Spell} while stupefied, the spell is disrupted unless you succeed at a @Check[flat|dc:resolve(5+@actor.conditions.stupefied.value)|name:Stupefied|showDC:all].",
+                "note": "呆滞时若你尝试@UUID[Compendium.sf2e.actions.Item.aBQ8ajvEBByv45yz]{Cast a Spell}行动，你必须通过@Check[flat|dc:resolve(5+@actor.conditions.stupefied.value)|name:Stupefied|showDC:all]检定，否则法术会被打断。",
                 "rules": "<p>你是思绪和本能被蒙蔽住。呆滞状态拥有状态值。你所有基于智力、感知和魅力的检定与DC获得等同于呆滞状态值的状态减值，包括意志豁免、法术攻击骰、法术Dc、使用这些属性调整值的技能检定。呆滞时若你尝试施放法术行动，你必须通过DC=5+呆滞值的纯骰检定，否则法术会被打断。</p>",
                 "summary": "你无法进行完整的心智思考，难以施法。"
             },
@@ -6999,7 +6999,7 @@
             },
             "undetected": {
                 "name": "无踪",
-                "rules": "<p>When you are undetected by a creature, that creature cannot see you at all, has no idea what space you occupy, and can't target you, though you still can be affected by abilities that target an area. When you're undetected by a creature, that creature is off-guard to you.</p>\n<p>A creature you're undetected by can guess which square you're in to try targeting you. It must pick a square and attempt an attack. This works like targeting a hidden creature (requiring a @Check[flat|dc:11|name:Undetected|traits:secret|showDC:all]), but the flat check and attack roll are rolled in secret by the GM, who doesn't reveal whether the attack missed due to failing the flat check, failing the attack roll, or choosing the wrong square.</p>\n<p>A creature can use the Seek action to try to find you.</p>",
+                "rules": "<p>当你对某生物处于无踪状态时，该生物完全无法看到你，也不知道你所在的位置，更无法瞄准你，不过你依然能被区域效果覆盖到。当你对某生物处于无踪状态时，该生物对你措手不及。</p>\n<p>你对其无踪的生物可以猜测你处于什么位置并尝试瞄准你。她必须选择一个方格然后尝试一次攻击。这和瞄准藏匿状态下的生物类似（需要@Check[flat|dc:11|name:Undetected|traits:secret|showDC:all]），但纯骰检定和攻击骰都由GM进行暗骰，并不会揭示攻击结果，到底是纯骰失败、攻击骰失败或选择错了方格。</p>\n<p>生物可用搜索动作尝试找到你。</p>",
                 "summary": "对方生物不知道你在哪。"
             },
             "unfriendly": {
