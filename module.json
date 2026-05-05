@@ -5,12 +5,15 @@
     "authors": [
         {
             "name": "Taka",
-            "email": "532236728@qq.com"
+            "email": "532236728@qq.com",
+            "url": "https://github.com/takaqiao"
         }
     ],
+    "version": "0.0.4",
     "compatibility": {
         "minimum": "12",
-        "verified": "13"
+        "verified": "14",
+        "maximum": "14"
     },
     "systems": [
         "sf2e"
@@ -42,13 +45,16 @@
             {
                 "id": "sf2e",
                 "type": "system",
-                "manifest": "https://github.com/foundryvtt/pf2e/blob/v13-dev/system.sf2e.json"
+                "compatibility": {
+                    "verified": "1.1.0"
+                }
             }
         ]
     },
-    "changelog": "https://github.com/takaqiao/sf2e_cn/releases/tag/0.0.3",
-    "version": "0.0.3",
     "url": "https://github.com/takaqiao/sf2e_cn",
     "manifest": "https://github.com/takaqiao/sf2e_cn/releases/latest/download/module.json",
-    "download": "https://github.com/takaqiao/sf2e_cn/releases/download/0.0.3/sf2cn.zip"
+    "download": "https://github.com/takaqiao/sf2e_cn/releases/download/0.0.4/module.zip",
+    "bugs": "https://github.com/takaqiao/sf2e_cn/issues",
+    "readme": "https://github.com/takaqiao/sf2e_cn#readme",
+    "changelog": "https://github.com/takaqiao/sf2e_cn/releases/tag/0.0.4"
 }
